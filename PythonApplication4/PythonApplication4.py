@@ -46,7 +46,7 @@ def mathimatic():
     try:
         getting = ent.get()
         solve = eval(getting)
-        label.configure(text=f"Vastus: {round(solve,1)}", font="Arial 15")
+        label.configure(text=f"Vastus: {round(solve,)}", font="Arial 15")
     except:
         label.configure(text="Error.", font="Arial 15")
 
