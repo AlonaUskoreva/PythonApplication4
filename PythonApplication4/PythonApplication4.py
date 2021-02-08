@@ -46,7 +46,7 @@ def mathimatic():
     try:
         getting = ent.get()
         solve = eval(getting)
-        label.configure(text=f"Vastus: {solve}", font="Arial 15")
+        label.configure(text=f"Vastus: {round(solve,1)}", font="Arial 15")
     except:
         label.configure(text="Error.", font="Arial 15")
 
@@ -68,7 +68,6 @@ m1.add_command(label="Tab1",accelerator='Command+V',command=lambda:funktion(0))
 m1.add_separator()
 m1.add_command(label="Tab2",command=lambda:funktion(1))
 m1.add_command(label="Tab3",command=lambda:funktion(2))
-m1.add_command(label="Tab4",command=lambda:funktion(3))
 
 m2=Menu(M,tearoff=0)
 M.add_cascade(label="BG Colors",menu=m2)
